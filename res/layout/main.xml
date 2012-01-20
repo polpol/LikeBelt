@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout android:id="@+id/outer" xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+         
+<ImageView android:layout_x="0px" android:layout_y="0px"
+   android:id="@+id/likebeltlogo_image"
+   android:layout_width="800px"
+   android:layout_height="480px"
+   android:src="@raw/likebeltlogo"
+   android:layout_gravity="right"
+   />
+      
+<ImageView android:layout_x="0px" android:layout_y="0px"
+   android:id="@+id/likebeltconfirm_image"
+   android:layout_width="800px"
+   android:layout_height="480px"
+   android:src="@raw/likebeltconfirm"
+   android:layout_gravity="right"
+   />
+      
+
+    <!-- Title -->
+    <TextView android:id="@+id/title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:singleLine="true"
+        android:textStyle="bold" 
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:layout_x="0px" android:layout_y="220px" />
+    
+    <!-- Content -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal">
+     <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dip" android:layout_weight="1">
+        <LinearLayout android:id="@+id/list" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" />
+    </ScrollView>
+    <ImageView 
+   android:id="@+id/test_image"
+   
+   android:layout_width="240px"
+   android:layout_height="wrap_content"
+   />
+    
+     <ImageView 
+   android:id="@+id/like_image"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:layout_gravity="right"
+   />
+
+      
+     </LinearLayout>
+</AbsoluteLayout>
