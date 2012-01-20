@@ -1,5 +1,6 @@
 /*
  * Patrick Miller - patrick@deeplocal.com
+ * Based on NFCDemo sample + info from this great post: http://mifareclassicdetectiononandroid.blogspot.com/
  */
 package com.deeplocal.nfcbelt;
 
