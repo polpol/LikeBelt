@@ -320,7 +320,7 @@ public class NFCBeltActivity extends Activity implements Runnable {
 		//workaround since you can't like things directly from graph API
 		//this opens the browser to a simple middle page with like button that user can click to like this url
 		//change this to use webview later
-		String url = "http://likebelt.dev.deeplocal.com/like.php?url="
+		String url = "YOUR URL"
 				+ likeUrl;
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setData(Uri.parse(url));
