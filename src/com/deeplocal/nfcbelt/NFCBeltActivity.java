@@ -55,7 +55,7 @@ import com.facebook.android.FacebookError;
 public class NFCBeltActivity extends Activity implements Runnable {
 	private static String tagID;
 	static final String TAG = "likebeltactivity";
-	Facebook facebook = new Facebook("YOUR FB APP ID");
+	Facebook facebook = new Facebook("YOUR_APP_ID");
 	private static NfcAdapter mAdapter;
 	private static PendingIntent mPendingIntent;
 	private static IntentFilter[] mFilters;
@@ -97,6 +97,7 @@ public class NFCBeltActivity extends Activity implements Runnable {
 		View outer = findViewById(R.id.outer);
 		outer.setBackgroundColor(Color.argb(255, 255, 255, 255));
 
+		
 		mAdapter = NfcAdapter.getDefaultAdapter(this);
 		mPendingIntent = PendingIntent.getActivity(this, 0, new Intent(this,
 				getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
@@ -395,6 +396,7 @@ public class NFCBeltActivity extends Activity implements Runnable {
 					ImageView ivL = (ImageView) findViewById(R.id.likebeltconfirm_image);
 					TextView tv = (TextView) findViewById(R.id.title);
 					tv.setVisibility(View.INVISIBLE);
+					
 					ivL.setVisibility(View.INVISIBLE);
 					ImageView ivH = (ImageView) findViewById(R.id.likebeltlogo_image);
 					ivH.setVisibility(View.VISIBLE);
