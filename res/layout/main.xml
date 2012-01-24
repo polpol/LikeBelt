@@ -21,8 +21,6 @@
    android:layout_gravity="right"
    />       
 
-
-    <!-- Title -->
     <TextView android:id="@+id/title" android:layout_width="match_parent"
         android:layout_height="wrap_content" android:singleLine="true"
         android:textStyle="bold" 
@@ -31,19 +29,5 @@
         android:textColor="#ffffff"
         android:layout_x="0px" android:layout_y="220px" />
     
-    <!-- Content -->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content" 
-    android:orientation="horizontal">
-     <ScrollView android:layout_width="match_parent"
-        android:layout_height="0dip" android:layout_weight="1">
-        <LinearLayout android:id="@+id/list" android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:orientation="vertical" />
-    </ScrollView>
-
-
-      
-     </LinearLayout>
 </AbsoluteLayout>
