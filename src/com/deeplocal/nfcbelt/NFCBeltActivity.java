@@ -414,10 +414,9 @@ public class NFCBeltActivity extends Activity implements Runnable {
 
 	@Override
 	public void onNewIntent(Intent intent) {
-		Log.i("Foreground dispatch", "Discovered tag with intent: " + intent);
+
 		resolveIntent(intent);
-		// mText.setText("Discovered tag " + ++mCount + " with intent: " +
-		// intent);
+
 	}
 
 	@Override
@@ -428,7 +427,7 @@ public class NFCBeltActivity extends Activity implements Runnable {
 
 	@Override
 	public void setTitle(CharSequence title) {
-		// mTitle.setText(title);
+
 	}
 
 	@Override
